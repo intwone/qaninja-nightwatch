@@ -11,7 +11,8 @@
     "test:smoke": "./node_modules/.bin/nightwatch.cmd --tag smoke",
     "test:stage-regression": "./node_modules/.bin/nightwatch.cmd --env=stage",
     "test:firefox-regression": "./node_modules/.bin/nightwatch.cmd --env=firefox",
-    "test:headless-regression": "./node_modules/.bin/nightwatch.cmd --env=firefox"
+    "test:headless-regression": "./node_modules/.bin/nightwatch.cmd --env=firefox",
+    "test:ci": "./node_modules/.bin/nightwatch --tag smoke --env=headless"
   },
   "keywords": [],
   "author": "",
