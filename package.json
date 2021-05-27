@@ -1,0 +1,28 @@
+{
+  "name": "zombieplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "./node_modules/.bin/nightwatch.cmd",
+    "test:login": "./node_modules/.bin/nightwatch.cmd --group login",
+    "test:register": "./node_modules/.bin/nightwatch.cmd --group register",
+    "test:search": "./node_modules/.bin/nightwatch.cmd --group search",
+    "test:smoke": "./node_modules/.bin/nightwatch.cmd --tag smoke",
+    "test:stage-regression": "./node_modules/.bin/nightwatch.cmd --env=stage",
+    "test:firefox-regression": "./node_modules/.bin/nightwatch.cmd --env=firefox",
+    "test:headless-regression": "./node_modules/.bin/nightwatch.cmd --env=firefox"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "chromedriver": "^90.0.1",
+    "geckodriver": "^2.0.0",
+    "nightwatch": "^1.6.4",
+    "pg": "^8.6.0"
+  }
+}
